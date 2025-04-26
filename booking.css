@@ -1,0 +1,272 @@
+/* ============  General Styles  ============  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font  */
+    background-color: #121212; /* Dark background  */
+    color: #fff; /* Light text  */
+    line-height: 1.6;
+    overflow-x: hidden; /* Prevent horizontal scrollbar */
+  }
+  
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  /* ============  Header  ============  */
+  
+  header {
+    background: linear-gradient(to right, #2c3e50, #1a2a3c); /* Sleek gradient  */
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 10;
+  }
+  
+  .header-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+  }
+  
+  .logo img {
+    height: 60px;
+  }
+  
+  .left-nav {
+    display: flex;
+  }
+  
+  .left-nav a {
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border-radius: 0.3rem;
+    transition: background 0.3s ease;
+  }
+  
+  .left-nav a:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .site-title {
+    font-size: 2rem;
+    margin: 0;
+    letter-spacing: 0.1rem;
+  }
+  
+  /* ============  Main  ============  */
+  
+  main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    background-color: #1e1e1e; /* Darker main background  */
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  section {
+    margin-bottom: 3rem;
+  }
+  
+  section h2 {
+    font-size: 1.75rem;
+    color: #f8f8f8; /* Softer white  */
+    border-bottom: 2px solid #444;
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* ============  Movie Grid j ============  */
+  
+  .movie-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid  */
+    gap: 2rem;
+  }
+  
+  .movie {
+    background: #252525; /* Darker movie card  */
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .movie:hover {
+    transform: scale(1.03);
+  }
+  
+  .movie img {
+    width: 100%;
+    height: 350px; /* Larger images  */
+    object-fit: cover;
+  }
+  
+  .movie-info {
+    padding: 1rem;
+  }
+  
+  .movie h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+  }
+  
+  .movie p {
+    font-size: 1rem;
+    color: #aaa;
+    margin-bottom: 1rem;
+  }
+  
+  .movie label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #ccc;
+  }
+  
+  .movie input[type='number'] {
+    width: 60px;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.3rem;
+    background: #333;
+    color: #fff;
+  }
+  
+  .add-to-cart {
+    background: #e74c3c; /* Vibrant button  */
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.3rem;
+    transition: background 0.3s ease;
+  }
+  
+  .add-to-cart:hover {
+    background: #c0392b;
+  }
+  
+  /* ============  Ticket Summary  ============  */
+  
+  #ticket-summary table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background: #252525;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  #ticket-summary th,
+  #ticket-summary td {
+    padding: 0.75rem;
+    text-align: center;
+    border-bottom: 1px solid #444;
+  }
+  
+  #ticket-summary thead {
+    background: #333;
+    color: #fff;
+  }
+  
+  #ticket-summary tfoot {
+    background: #333;
+    color: #fff;
+  }
+  
+  #ticket-summary tfoot td {
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  
+  /* ============  Actions  ============  */
+  
+  #actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  #actions button {
+    background: #3498db; /* Bright action buttons  */
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.3rem;
+    transition: background 0.3s ease;
+  }
+  
+  #actions button:hover {
+    background: #2980b9;
+  }
+  
+  .button-link {
+    background: #2ecc71; /* Checkout button  */
+    color: #fff;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.3rem;
+    transition: background 0.3s ease;
+  }
+  
+  .button-link:hover {
+    background: #27ae60;
+  }
+  
+  /* ============  Discount Offers  ============  */
+  
+  #discount-offers {
+    background: rgba(0, 123, 255, 0.1); /* Subtle background  */
+    border-left: 4px solid #007bff;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-radius: 0.3rem;
+  }
+  
+  #discount-offers h2 {
+    font-size: 1.25rem;
+    color: #fff;
+    margin-bottom: 0.75rem;
+  }
+  
+  #discount-offers p {
+    color: #ccc;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* ============  Footer  ============  */
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: #222;
+    color: #fff;
+    margin-top: 2rem;
+    border-radius: 0 0 0.5rem 0.5rem;
+  }

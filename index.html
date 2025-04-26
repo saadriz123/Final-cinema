@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Ticket Booking</title>
+  <link rel="stylesheet" href="booking.css">
+  <script src="booking.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <img src="/image/logor.png" alt="Logo">
+      </div>
+      <nav class="left-nav">
+        <a href="index.html">Home</a>
+        <a href="index.html">Book Tickets</a>
+      </nav>
+      <h1 class="site-title">Resit Cinemas</h1>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="now-showing">
+      <h2>Now Showing</h2>
+      <div class="movie-list">
+        <div class="movie">
+          <img src="./image/assign2.jpeg" alt="Accountant 2">
+          <h3>Accountant 2</h3>
+          <p>Price: $14</p>
+          <label>Seats: <input type="number" min="0" value="0" data-price="14" data-movie="Avengers: Secret Wars"></label>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="movie">
+          <img src="./image/minecraft.jpeg" alt="A Minecraft Movie">
+          <h3>A Minecraft Movie</h3>
+          <p>Price: $9</p>
+          <label>Seats: <input type="number" min="0" value="0" data-price="9" data-movie="Joker"></label>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="movie">
+          <img src="./image/sikosiko.jpeg" alt="Siko Siko">
+          <h3>Siko Siko</h3>
+          <p>Price: $11</p>
+          <label>Seats: <input type="number" min="0" value="0" data-price="11" data-movie="Inside Out 2"></label>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="movie">
+          <img src="./image/sinners.jpeg" alt="Sinners">
+          <h3>Sinners</h3>
+          <p>Price: $13</p>
+          <label>Seats: <input type="number" min="0" value="0" data-price="13" data-movie="Mission: Impossible 7"></label>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="movie">
+          <img src="./image/drop.jpeg" alt="Drop">
+          <h3>Drop</h3>
+          <p>Price: $12</p>
+          <label>Seats: <input type="number" min="0" value="0" data-price="12" data-movie="The Batman: Part II"></label>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="movie">
+          <img src="./image/The Amateur.jpeg" alt="The Amateur">
+          <h3>The Amateur</h3>
+          <p>Price: $10</p>
+          <label>Seats: <input type="number" min="0" value="0" data-price="10" data-movie="Kung Fu Panda 4"></label>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="upcoming-movies">
+      <h2>Upcoming Movies</h2>
+      <div class="movie-list">
+        <div class="movie">
+          <img src="./image/2 1.jpeg" alt="Carlo Acutis">
+          <h3>Carlo Acutis</h3>
+          <p>Price: $11</p>
+          <label>Seats: <input type="number" min="0" value="0" data-price="11" data-movie="The Dictator"></label>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="movie">
+          <img src="./image/Il sospetto.jpeg" alt="Il sospetto">
+          <h3>Il sospetto</h3>
+          <p>Price: $13</p>
+          <label>Seats: <input type="number" min="0" value="0" data-price="13" data-movie="Avatar 3"></label>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="movie">
+          <img src="./image/lastcabin.jpeg" alt="The last cabin">
+          <h3>The last cabin</h3>
+          <p>Price: $10</p>
+          <label>Seats: <input type="number" min="0" value="0" data-price="10" data-movie="Shrek 5"></label>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="movie">
+          <img src="./image/messenger.jpeg" alt="Messenger 666">
+          <h3>Messenger 666</h3>
+          <p>Price: $12</p>
+          <label>Seats: <input type="number" min="0" value="0" data-price="12" data-movie="Spider-Man"></label>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="movie">
+          <img src="./image/Thunderbolts.jpeg" alt="Thunderbolts">
+          <h3>Thunderbolts</h3>
+          <p>Price: $13</p>
+          <label>Seats: <input type="number" min="0" value="0" data-price="13" data-movie="Deadpool & Wolverine"></label>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="movie">
+          <img src="./image/Holy NIght.jpeg" alt="Holy Night">
+          <h3>Wicked (Holy Night</h3>
+          <p>Price: $12</p>
+          <label>Seats: <input type="number" min="0" value="0" data-price="12" data-movie="Wicked"></label>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="premium-screenings">
+      <h2>Premium Screenings</h2>
+      <div class="movie-list">
+        <div class="movie">
+          <img src="./image/OSK.jpegMendadak Dangdut.jpeg" alt="Mendadak Dangdut">
+          <h3>Mendadak Dangdut</h3>
+          <p>Price: $20</p>
+          <label>Seats: <input type="number" min="0" value="0" data-price="20" data-movie="Dune Part Two"></label>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="movie">
+          <img src="./image/fury.jpeg" alt="Fury">
+          <h3>Fury</h3>
+          <p>Price: $18</p>
+          <label>Seats: <input type="number" min="0" value="0" data-price="18" data-movie="Oppenheimer"></label>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="movie">
+          <img src="./image/Uranchu.jpeg" alt="Uranchu">
+          <h3>Uranchu</h3>
+          <p>Price: $19</p>
+          <label>Seats: <input type="number" min="0" value="0" data-price="19" data-movie="Avatar: The Way of Water"></label>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="movie">
+          <img src="./image/isolated.jpeg" alt="Isolated">
+          <h3>Isolated</h3>
+          <p>Price: $18</p>
+          <label>Seats: <input type="number" min="0" value="0" data-price="18" data-movie="Top Gun: Maverick"></label>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="imax-3d">
+      <h2>3D & IMAX Shows</h2>
+      <div class="movie-list">
+        <div class="movie">
+          <img src="./image/VR.jpeg" alt="VR">
+          <h3>VR</h3>
+          <p>Price: $18</p>
+          <label>Seats: <input type="number" min="0" value="0" data-price="18" data-movie="Avatar: IMAX"></label>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="movie">
+          <img src="./image/raid2.jpeg" alt="Raid 2">
+          <h3>Raid 2</h3>
+          <p>Price: $16</p>
+          <label>Seats: <input type="number" min="0" value="0" data-price="16" data-movie="Doctor Strange"></label>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="movie">
+          <img src="./image/naisha.jpeg" alt="Naisha">
+          <h3>Naisha</h3>
+          <p>Price: $17</p>
+          <label>Seats: <input type="number" min="0" value="0" data-price="17" data-movie="Guardians 3"></label>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="movie">
+          <img src="./image/Jon Ghost.jpeg" alt="Jon Ghost">
+          <h3>Jon Ghost</h3>
+          <p>Price: $15</p>
+          <label>Seats: <input type="number" min="0" value="0" data-price="15" data-movie="Jurassic World"></label>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="discount-offers">
+      <h2>Special Discount Offers )</h2>
+      <p class="discount-item">Buy 2 tickets and get 1 free!</p>
+      <p class="discount-item">Early bird special 15% off for bookings before 5 PM!</p>
+      <p class="discount-item">Book 4+ tickets and enjoy a free popcorn combo!</p>
+    </section>
+
+    <section id="ticket-summary">
+      <h2>Your Ticket Summary</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Movie</th>
+            <th>Seats</th>
+            <th>Price Per Ticket</th>
+            <th>Total Price</th>
+          </tr>
+        </thead>
+        <tbody id="ticket-table-body"></tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3"><strong>Total</strong></td>
+            <td id="grand-total">$0.00</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <section id="actions">
+      <button id="save-fav">Save as Favourite</button>
+      <button id="apply-fav">Apply Favourite</button>
+      <button id="clear-cart">Clear Cart</button>
+      <a href="checkout.html" class="button-link">Proceed to Checkout</a>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Resit Cinemas</p>
+  </footer>
+</body>
+
+</html>

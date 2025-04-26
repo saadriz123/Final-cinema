@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Checkout - Movie Ticket Booking</title>
+  <link rel="stylesheet" href="/checkout.css">
+  <script src="/checkout.js" defer></script>
+
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <img src="/image/logor.png" alt="Logo">
+      </div>
+      <nav class="left-nav">
+        <a href="index.html">Home</a>
+        <a href="index.html">Book Tickets</a>
+      </nav>
+      <h1 class="site-title">Resit Cinemas</h1>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Order Summary</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Movie</th>
+            <th>tickets</th>
+            <th>Price Per Ticket</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody id="checkout-summary">
+          </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3"><strong>Grand Total</strong></td>
+            <td id="checkout-total">$0.00</td> </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <section id="seat-selection-area">
+      <h2>Select Your Seats</h2>
+      <p>Please select <span id="seats-to-select-count">X</span> seat(s).</p> <div class="seat-map-container">
+        <div class="screen">SCREEN</div>
+        <div class="seats">
+          <div class="seat-row">
+             <div class="seat available" data-seat="A1">A1</div>
+             <div class="seat available" data-seat="A2">A2</div>
+             <div class="seat taken" data-seat="A3">A3</div>
+             <div class="seat available" data-seat="A4">A4</div>
+             <div class="seat available" data-seat="A5">A5</div>
+             <div class="seat available" data-seat="A6">A6</div>
+             <div class="seat taken" data-seat="A7">A7</div>
+             <div class="seat available" data-seat="A8">A8</div>
+          </div>
+          <div class="seat-row">
+             <div class="seat available" data-seat="B1">B1</div>
+             <div class="seat available" data-seat="B2">B2</div>
+             <div class="seat available" data-seat="B3">B3</div>
+             <div class="seat available" data-seat="B4">B4</div>
+             <div class="seat available" data-seat="B5">B5</div>
+             <div class="seat available" data-seat="B6">B6</div>
+             <div class="seat available" data-seat="B7">B7</div>
+             <div class="seat available" data-seat="B8">B8</div>
+           </div>
+           <div class="seat-row">
+             <div class="seat available" data-seat="C1">C1</div>
+             <div class="seat taken" data-seat="C2">C2</div>
+             <div class="seat taken" data-seat="C3">C3</div>
+             <div class="seat available" data-seat="C4">C4</div>
+             <div class="seat available" data-seat="C5">C5</div>
+             <div class="seat available" data-seat="C6">C6</div>
+             <div class="seat available" data-seat="C7">C7</div>
+             <div class="seat available" data-seat="C8">C8</div>
+           </div>
+           </div>
+         <div class="seat-legend">
+            <div><span class="seat available example"></span> Available</div>
+            <div><span class="seat selected example"></span> Selected</div>
+            <div><span class="seat taken example"></span> Taken</div>
+        </div>
+      </div>
+
+      <div class="selected-seats-display">
+        Selected Seats: <span id="selected-seats-list">None</span>
+      </div>
+    </section>
+    <section>
+      <h2>Enter Your Details</h2>
+      <form id="payment-form">
+        <label>Full Name: <input type="text" name="fullname" required /></label>
+        <label>Email: <input type="email" name="email" required /></label>
+        <label>Payment Method:
+          <select name="payment" required>
+            <option value="">--Select--</option>
+            <option value="credit">Credit Card</option>
+            <option value="debit">Debit Card</option>
+            <option value="paypal">PayPal</option>
+          </select>
+        </label>
+        <label>Card Number: <input type="text" name="cardnumber" placeholder="1234-5678-9012-3456" required /></label>
+        <label>Expiry Date: <input type="month" name="expiry" required /></label>
+        <label>CVV: <input type="password" name="cvv" maxlength="3" required /></label> <button type="submit">Confirm Payment</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Resit Cinemas</p>
+  </footer>
+
+</body>
+</html>
