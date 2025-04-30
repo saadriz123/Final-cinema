@@ -9,6 +9,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const saveFavButton = document.getElementById("save-fav");
     const applyFavButton = document.getElementById("apply-fav");
     const clearCartButton = document.getElementById("clear-cart");
+
+
+
+    // clear cart everytime page reloads
+    localStorage.removeItem("cart");
   
     // Load cart from localStorage if it exists, otherwise initialize an empty cart
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
